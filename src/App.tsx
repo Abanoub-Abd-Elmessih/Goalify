@@ -27,6 +27,8 @@ function App() {
     try {
       if (goals.length > 0) {
         localStorage.setItem("Goals", JSON.stringify(goals));
+      } else {
+        localStorage.removeItem("Goals"); // Remove item if there are no goals
       }
     } catch (error) {
       console.error("Error saving goals to localStorage", error);
