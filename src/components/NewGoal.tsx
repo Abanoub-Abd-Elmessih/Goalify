@@ -1,7 +1,7 @@
 import { FormEvent, useRef } from "react";
 
 type NewGoalProps = {
-    onAddGoal:(goal:string , summary:string)=>void;
+  onAddGoal:(goal:string , summary:string)=>void;
 }
 
 export default function NewGoal({onAddGoal}:NewGoalProps) {
